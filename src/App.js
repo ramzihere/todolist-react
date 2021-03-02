@@ -16,7 +16,10 @@ function App() {
         <h2>A simple todolist app built with React Hooks & Context</h2>
       </header>
       <TodoApp />
-      <a href="" className={classes.link}>
+      <a
+        href="https://github.com/ramzihere/todolist-react.git"
+        className={classes.link}
+      >
         <strong>View source on GitHub &copy; M.Ramzan</strong>
       </a>
     </div>
