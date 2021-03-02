@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+
+import TodoApp from './components/TodoApp';
+
+import useStyles from './styles/AppStyles';
 
 function App() {
+  const classes = useStyles();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className={classes.header}>
+        <h1>
+          todo<span>list</span>
+        </h1>
+        <h2>A simple todolist app built with React Hooks & Context</h2>
       </header>
+      <TodoApp />
+      <a href="" className={classes.link}>
+        <strong>View source on GitHub &copy; M.Ramzan</strong>
+      </a>
     </div>
   );
 }
